@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-'''LockBoxes Challenge'''
+'''The lockBoxes Challenge'''
 
 
 def canUnlockAll(boxes):
-    '''determines if all the boxes can be opened or not
+    '''This determines if all boxes can be opened or not
     Returns:
-        True: all boxes can be opened
+        True: If all boxes can be opened
         False: not all boxes can be opened
     '''
     length = len(boxes)
