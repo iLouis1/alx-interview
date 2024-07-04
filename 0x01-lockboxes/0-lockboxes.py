@@ -11,22 +11,22 @@ def canUnlockAll(boxes):
     length = len(boxes)
     keys = set()
     opened_boxes = []
-    i = 0
+    x = 0
 
-    while i < length:
-        oldi = i
-        opened_boxes.append(i)
-        keys.update(boxes[i])
+    while x < length:
+        oldi = x
+        opened_boxes.append(x)
+        keys.update(boxes[x])
         for key in keys:
             if key != 0 and key < length and key not in opened_boxes:
-                i = key
+                x = key
                 break
-        if oldi != i:
+        if oldi != x:
             continue
         else:
             break
 
-    for i in range(length):
-        if i not in opened_boxes and i != 0:
+    for x in range(length):
+        if x not in opened_boxes and x != 0:
             return False
     return True
